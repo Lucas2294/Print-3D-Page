@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecera{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30vh;
+    background-image: url("./images/hero2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.navBar{
+    width: 100%;
+    height: auto;
+    background-color: rgb(29, 28, 28);
+    border-bottom: solid 2px #BABABA;
+    display: flex;
+    grid-column: 1/-1;
+}
+
+.lista1{
+    margin-top: 10px;
+    list-style:none;
+    display: flex;
+}
+
+.liNav{
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    transition: all 0.5s ease-in;
+}
+.link1{
+    color: #BABABA;
+    text-decoration: none
+}
+
+li{
+    margin-bottom: 10px;
+    padding: 3px;
+    border: solid 1px;
+    border-radius: 5px;
+    background-color: rgb(52 51 51);
+}
+
+.maiN{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #0B0B10;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.barraFiltros{
+    box-sizing: border-box;
+    width: 20vw;
+    background-color: #0B0B10;
+    border-right: solid 2px #BABABA;
+    grid-column: 1/2;
+
+}
+
+
+.imagenesPrincipal{
+    grid-column: 2/-1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    min-height: 70vh;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.imgPrincipal{
+    border: solid 2px #BABABA;
+    max-width: 90%;
+}
+
+.imagenArticulo{
+    width: 25vw;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    
+}
+
+.piePagina{
+    background-color: rgb(29, 28, 28);
+    color: ghostwhite;
+    padding-left: 15px;
+}
+
+.liNav:hover{
+    background-color: rgba(52,51,51,0.5);
+    transition: 0.3s;
+}
+
+
+
+/* MATERIALES */
+.textWhite{
+    color: #BABABA;
+}
+
+.mainMat{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #0B0B10;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+
+.pSup{
+    display: block;
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.imgRollo{
+    display: flex;
+    justify-content: center;
+}
+
+.h3s{
+    padding-left: 1vw;
+}
+
+.pes{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5vh;
+}
+
+/*INFORMACION*/
+.mainInf{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #0B0B10;
+}
+
+.p2Inf{
+    padding-bottom: 10vh;
+    padding-left: 1vw;
+}
+
+.videoResponsive{
+    height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.videoYT{
+    height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*  UBICACION */
+
+.mainUbi{
+    display: block;
+    padding-left: 1%;
+}
+
+.hUbi{
+    padding: 1vw;
+
+}
+
+.pUbi{
+    padding-bottom: 15vh;
+}
+
+.mapUbi{
+    border-radius: 1rem;
+    margin-bottom: 5vh;
+}
+
+/* CONTACTO */
+.formContact{
+    display: flex;
+    flex-direction: column;
+}
+
+.formDiv{
+    width: fit-content;
+}
+
+.pCont{
+    padding-bottom: 5vh;
+}
+
+.contactInput{
+    background-color: rgb(52 51 51);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.inputSend{
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #BABABA;
+}
+
+.mainContact{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #0B0B10;
+}
+
+.redes{
+    display: block;
+    padding-left: 1%;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.redes p{
+    padding-bottom: 10px;
+}
+
+.redes a{
+    padding-right: 15px;
+}
+
+/*EFECTOS*/
+.liNav:hover{
+    box-shadow: 1px 1px 3px 1px #3f51b5;
+}
+
+
+
+@media screen and (max-width:480px) {
+    .navBar{
+        justify-content: center;
+        border-top: solid 2px #BABABA;
+    }
+    .lista1{
+        flex-direction: column;
+    }
+    .liNav{
+        text-align: center;
+    }
+    .barraFiltros{
+        height: 100px;
+        border-bottom: solid 2px #BABABA;
+        grid-column: 1/-1;
+        width: 100%;
+        border-right: none;
+    }
+    .imagenesPrincipal{
+        grid-column: 1/-1;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 20px;
+        padding-bottom: 10%;
+    }
+/* Pestaña MATERIALES*/
+    .mainMat{
+        display: block;
+    }
+    .materialImg{
+        width: -webkit-fill-available;
+    }
+    .mapUbi{
+        max-width: -webkit-fill-available;
+    }
+    
+}
