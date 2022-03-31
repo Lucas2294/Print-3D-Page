@@ -6,13 +6,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.cabecera{
-    box-sizing: border-box;
-    width: 100%;
-    height: 30vh;
-    background-image: url("./images/hero2.jpg");
-    background-position: center;
+.hero-max{
+    height: 50vh;
+}
+
+.hero-img{
+    background-image: url("images/hero.jpg");
     background-size: cover;
+    background-position-y: center;
+    
+}
+
+.hero-img2{
+    background-image: url("images/hero2.jpg");
+    background-size: cover;
+    background-position-y: center;
+    
+}
+
+.hero-img3{
+    background-image: url("images/hero3.jpg");
+    background-size: cover;
+    background-position-y: center;
+    
+}
+
+.nav-titulo{
+    position: absolute;
+    right: 2%;
+    color: #BABABA;
+    text-transform: uppercase;
+    top: 52%;
+
+    animation-name: tituloHero;
+    animation-duration: 3s;
+    animation-timing-function: ease;
 }
 
 .navBar{
@@ -22,30 +50,33 @@
     border-bottom: solid 2px #BABABA;
     display: flex;
     grid-column: 1/-1;
+    padding: 20px;
+}
+
+.barraNav{
+
 }
 
 .lista1{
     margin-top: 10px;
     list-style:none;
     display: flex;
+    margin: 0;
 }
 
 .liNav{
     margin-left: 2.5px;
-    margin-right: 2.5px;
+    margin-right: 1rem;
     transition: all 0.5s ease-in;
-}
-.link1{
-    color: #BABABA;
-    text-decoration: none
-}
-
-li{
-    margin-bottom: 10px;
     padding: 3px;
     border: solid 1px;
     border-radius: 5px;
     background-color: rgb(52 51 51);
+}
+.link1{
+    color: #BABABA;
+    text-decoration: none;
+    padding: 1rem;
 }
 
 .maiN{
@@ -58,28 +89,44 @@ li{
 
 .barraFiltros{
     box-sizing: border-box;
-    width: 20vw;
     background-color: #0B0B10;
     border-right: solid 2px #BABABA;
     grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
 
+.btn-dropdown{
+    background-color: rgb(52 51 51);
+}
+
+.ul-dropdown{
+    background-color: rgb(52 51 51);
+}
+
+.ul-dropdown li a{
+    color: #fff;
 }
 
 
 .imagenesPrincipal{
     grid-column: 2/-1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
-    min-height: 70vh;
-    align-content: flex-start;
+    padding-top: 20px;   
+    padding-bottom: 20px; 
+}
+
+.row-opt{
+    row-gap: 20px;
     align-items: center;
 }
 
 .imgPrincipal{
     border: solid 2px #BABABA;
     max-width: 90%;
+    transition: 0.5s ease-out;
 }
 
 .imagenArticulo{
@@ -91,7 +138,7 @@ li{
     
 }
 
-.imagenArticulo:hover{
+.imgPrincipal:hover{
     transform: scale(1.3);
 }
 
@@ -192,10 +239,6 @@ li{
 }
 
 /* CONTACTO */
-.formContact{
-    display: flex;
-    flex-direction: column;
-}
 
 .formDiv{
     width: fit-content;
@@ -203,6 +246,10 @@ li{
 
 .pCont{
     padding-bottom: 5vh;
+}
+
+.form-contact label{
+    color: #BABABA;
 }
 
 .contactInput{
@@ -213,15 +260,26 @@ li{
 
 .inputSend{
     width: 30%;
-    margin: 5px;
+    margin-top: 20px;
     border-radius: 5px;
-    background-color: #BABABA;
+    border: none;
+    background: rgb(40 39 39);
+    color: #BABABA;
+    transition: 0.5s ease;
+}
+
+.inputSend:hover{
+    box-shadow: 0px 10px 10px -5px rgba(173, 173, 173, 0.377);
+    transform: translateY(-0.25em);
 }
 
 .mainContact{
     box-sizing: border-box;
     width: 100%;
     background-color: #0B0B10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .redes{
@@ -242,6 +300,14 @@ li{
 /*EFECTOS*/
 .liNav:hover{
     box-shadow: 1px 1px 3px 1px #3f51b5;
+}
+
+@keyframes tituloHero {
+    0%{
+        font-size: 120px;
+        transform: translate(150px,0);
+    }
+    
 }
 
 
