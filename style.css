@@ -53,9 +53,6 @@
     padding: 20px;
 }
 
-.barraNav{
-
-}
 
 .lista1{
     margin-top: 10px;
@@ -146,6 +143,7 @@
     background-color: rgb(29, 28, 28);
     color: ghostwhite;
     padding-left: 15px;
+    padding-bottom: 30px;
 }
 
 .liNav:hover{
