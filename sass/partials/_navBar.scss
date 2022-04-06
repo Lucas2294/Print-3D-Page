@@ -1,0 +1,45 @@
+.nav-titulo{
+    position: absolute;
+    right: 2%;
+    color: #BABABA;
+    text-transform: uppercase;
+    top: 52%;
+
+    animation-name: tituloHero;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+.navBar{
+    width: 100%;
+    height: auto;
+    background-color: #1d1c1c;
+    border-bottom: solid 2px #BABABA;
+    display: flex;
+    grid-column: 1/-1;
+    padding: 20px;
+    .lista1{
+        margin-top: 10px;
+        list-style:none;
+        display: flex;
+        margin: 0;
+        .liNav{
+            margin-left: 2.5px;
+            margin-right: 1rem;
+            transition: all 0.5s ease-in;
+            padding: 3px;
+            border: solid 1px;
+            border-radius: 5px;
+            background-color: #343333;
+            .link1{
+                color: #BABABA;
+                text-decoration: none;
+                padding: 1rem;
+            }
+        }
+        .liNav:hover{
+            background-color: #34333380;
+            transition: 0.3s;
+        }
+    }
+}
