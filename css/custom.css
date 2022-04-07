@@ -11959,6 +11959,11 @@ fieldset:disabled .btn {
   }
 }
 
+.imagesnesext, .hero-img, .hero-img2, .hero-img3 {
+  background-size: cover;
+  background-position-y: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11971,20 +11976,14 @@ fieldset:disabled .btn {
 
 .hero-img {
   background-image: url("../images/hero.jpg");
-  background-size: cover;
-  background-position-y: center;
 }
 
 .hero-img2 {
   background-image: url("../images/hero2.jpg");
-  background-size: cover;
-  background-position-y: center;
 }
 
 .hero-img3 {
   background-image: url("../images/hero3.jpg");
-  background-size: cover;
-  background-position-y: center;
 }
 
 .nav-titulo {
@@ -12079,6 +12078,11 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+.imagesnesext, .hero-img, .hero-img2, .hero-img3 {
+  background-size: cover;
+  background-position-y: center;
+}
+
 .imagenesPrincipal {
   grid-column: 2/-1;
   padding-top: 20px;
@@ -12119,6 +12123,11 @@ fieldset:disabled .btn {
   color: ghostwhite;
   padding-left: 15px;
   padding-bottom: 30px;
+}
+
+.imagesnesext, .hero-img, .hero-img2, .hero-img3 {
+  background-size: cover;
+  background-position-y: center;
 }
 
 .maiN {

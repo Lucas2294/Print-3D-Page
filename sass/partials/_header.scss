@@ -1,3 +1,6 @@
+@import "./variables";
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,22 +12,16 @@
 }
 
 .hero-img{
+    @extend .imagesnesext;
     background-image: url("../images/hero.jpg");
-    background-size: cover;
-    background-position-y: center;
-    
 }
 
 .hero-img2{
+    @extend .imagesnesext;
     background-image: url("../images/hero2.jpg");
-    background-size: cover;
-    background-position-y: center;
-    
 }
 
 .hero-img3{
+    @extend .imagesnesext;
     background-image: url("../images/hero3.jpg");
-    background-size: cover;
-    background-position-y: center;
-    
 }
