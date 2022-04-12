@@ -18,28 +18,15 @@
     display: flex;
     grid-column: 1/-1;
     padding: 20px;
-    .lista1{
-        margin-top: 10px;
-        list-style:none;
-        display: flex;
-        margin: 0;
-        .liNav{
-            margin-left: 2.5px;
-            margin-right: 1rem;
-            transition: all 0.5s ease-in;
-            padding: 3px;
-            border: solid 1px;
+    .menuHamb{
+        background-color: #343333;
+        & li a{
+            color: #fff;
             border-radius: 5px;
-            background-color: #343333;
-            .link1{
-                color: #BABABA;
-                text-decoration: none;
-                padding: 1rem;
-            }
         }
-        .liNav:hover{
-            background-color: #34333380;
-            transition: 0.3s;
+        & li a:hover{
+            color: #1e2125;
+            background-color: #e9ecef;
         }
     }
 }

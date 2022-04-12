@@ -12012,36 +12012,18 @@ fieldset:disabled .btn {
   padding: 20px;
 }
 
-.navBar .lista1 {
-  margin-top: 10px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-
-.navBar .lista1 .liNav {
-  margin-left: 2.5px;
-  margin-right: 1rem;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  padding: 3px;
-  border: solid 1px;
-  border-radius: 5px;
+.navBar .menuHamb {
   background-color: #343333;
 }
 
-.navBar .lista1 .liNav .link1 {
-  color: #BABABA;
-  text-decoration: none;
-  padding: 1rem;
+.navBar .menuHamb li a {
+  color: #fff;
+  border-radius: 5px;
 }
 
-.navBar .lista1 .liNav:hover {
-  background-color: #34333380;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.navBar .menuHamb li a:hover {
+  color: #1e2125;
+  background-color: #e9ecef;
 }
 
 .barraFiltros {
@@ -12125,6 +12107,19 @@ fieldset:disabled .btn {
   padding-bottom: 30px;
 }
 
+.piePagina .footA {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.piePagina .footA:hover {
+  background: #0d6dfd65;
+  border-radius: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .imagesnesext, .hero-img, .hero-img2, .hero-img3 {
   background-size: cover;
   background-position-y: center;
@@ -12180,7 +12175,6 @@ fieldset:disabled .btn {
 .pes {
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5vh;
 }
 
 /*INFORMACION*/
