@@ -9,8 +9,9 @@
     .row-opt{
         row-gap: map-get($estilos, padin); ;
         align-items: center;
+        justify-content: center;
         .div-img{
-            @include tamanos(370px, 400px)
+            @include tamanos(370px, 400px);
             .imgPrincipal{
                 border: solid 2px #BABABA;
                 transition: 0.5s ease-out;
